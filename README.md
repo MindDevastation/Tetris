@@ -14,12 +14,15 @@
 
   So the symbol L will correspond to the symbol array "010010011" and will be written in the game array in the form:
 
-  0 1 0
-  0 1 0
-  0 1 1
+#  0 1 0
+#  0 1 0
+#  0 1 1
   
 #  Requirements
+
   -Qt >= 6.0.0
+  
   -CMake >= 3.5
+  
   -C++14
   
