@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>579</width>
+    <height>368</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Welcome to the Tetris</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="background">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>631</width>
+      <height>381</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="S">
+    <property name="geometry">
+     <rect>
+      <x>468</x>
+      <y>10</y>
+      <width>104</width>
+      <height>169</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Papyrus</family>
+      <pointsize>80</pointsize>
+      <italic>false</italic>
+      <bold>true</bold>
+      <underline>false</underline>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color : lime</string>
+    </property>
+    <property name="text">
+     <string>S</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="R">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>10</y>
+      <width>87</width>
+      <height>169</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Papyrus</family>
+      <pointsize>80</pointsize>
+      <italic>false</italic>
+      <bold>true</bold>
+      <underline>false</underline>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color : cyan</string>
+    </property>
+    <property name="text">
+     <string>R</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="I">
+    <property name="geometry">
+     <rect>
+      <x>433</x>
+      <y>10</y>
+      <width>29</width>
+      <height>169</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Papyrus</family>
+      <pointsize>80</pointsize>
+      <italic>false</italic>
+      <bold>true</bold>
+      <underline>false</underline>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color : yellow</string>
+    </property>
+    <property name="text">
+     <string>I</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="E">
+    <property name="geometry">
+     <rect>
+      <x>119</x>
+      <y>10</y>
+      <width>106</width>
+      <height>169</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Papyrus</family>
+      <pointsize>80</pointsize>
+      <italic>false</italic>
+      <bold>true</bold>
+      <underline>false</underline>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color : blue</string>
+    </property>
+    <property name="text">
+     <string>E</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="T2">
+    <property name="geometry">
+     <rect>
+      <x>231</x>
+      <y>10</y>
+      <width>103</width>
+      <height>169</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Papyrus</family>
+      <pointsize>80</pointsize>
+      <italic>false</italic>
+      <bold>true</bold>
+      <underline>false</underline>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color : red</string>
+    </property>
+    <property name="text">
+     <string>T</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="T">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>103</width>
+      <height>169</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Papyrus</family>
+      <pointsize>80</pointsize>
+      <italic>false</italic>
+      <bold>true</bold>
+      <underline>false</underline>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color : red</string>
+    </property>
+    <property name="text">
+     <string>T</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Close">
+    <property name="geometry">
+     <rect>
+      <x>318</x>
+      <y>190</y>
+      <width>231</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Parchment</family>
+      <pointsize>45</pointsize>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Close Game</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Start">
+    <property name="geometry">
+     <rect>
+      <x>41</x>
+      <y>190</y>
+      <width>271</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Parchment</family>
+      <pointsize>45</pointsize>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Start Game</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>579</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

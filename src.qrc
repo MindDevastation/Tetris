@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/">
+        <file>img/tetris.jpg</file>
+    </qresource>
+</RCC>
