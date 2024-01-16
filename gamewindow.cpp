@@ -18,10 +18,6 @@ GameWindow::GameWindow(QWidget *parent) :
     timer = new QTimer;
     connect(timer, SIGNAL(timeout()), this, SLOT(play()));
     timer->setInterval(1000);
-
-    // QPalette palette = ui->background->palette();
-    // palette.setColor()
-    // ui->background->setPalette(palette);
 }
 
 GameWindow::~GameWindow()
@@ -49,8 +45,6 @@ void GameWindow::gameField()
             renderField(i, k);
         }
     }
-
-    //ui->gameField->item(1, 1)->setBackground(Qt::red);
 }
 
 
@@ -98,6 +92,7 @@ void GameWindow::play()
 {
     //move down
     this->gameProp.moveDown();
+    posX++;
 
     //render new figure`s position
     for(int i = 0; i < this->gameProp.getRows(); i++){
@@ -401,7 +396,6 @@ void GameWindow::keyPressEvent(QKeyEvent *e)
         default:
             break;
         }
-
 
         for(int i = posX; i < posX + 3; i++){
             for(int k = posY; k < posY + 3; k++){
