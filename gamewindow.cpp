@@ -29,6 +29,10 @@ void GameWindow::gameField()
 {
     //creating game field
 
+    ui->gameField->setColumnCount(this->gameProp.getCols());
+    ui->gameField->setRowCount(this->gameProp.getRows());
+    //ui->gameField->setFixedSize(this->gameProp.getCols() * 40, this->gameProp.getRows() * 40);
+
     //resize cols and rows
     for(int i = 0; i < this->gameProp.getRows(); i++){
         ui->gameField->setRowHeight(i, 40);
@@ -37,6 +41,8 @@ void GameWindow::gameField()
     for(int i = 0; i < this->gameProp.getCols(); i++){
         ui->gameField->setColumnWidth(i, 40);
     }
+
+
 
 
     //render field
@@ -122,37 +128,7 @@ void GameWindow::play()
         renderFigure();
     }
 
-    int pointSize = 0;
-    QFont font = ui->T->font();
-
-    pointSize = rndGen();
-    font.setPointSize(pointSize);
-    ui->T->setFont(font);
-
-    pointSize = rndGen();
-    font = ui->E->font();
-    font.setPointSize(pointSize);
-    ui->E->setFont(font);
-
-    pointSize = rndGen();
-    font = ui->T_2->font();
-    font.setPointSize(pointSize);
-    ui->T_2->setFont(font);
-
-    pointSize = rndGen();
-    font = ui->R->font();
-    font.setPointSize(pointSize);
-    ui->R->setFont(font);
-
-    pointSize = rndGen();
-    font = ui->I->font();
-    font.setPointSize(pointSize);
-    ui->I->setFont(font);
-
-    pointSize = rndGen();
-    font = ui->S->font();
-    font.setPointSize(pointSize);
-    ui->S->setFont(font);
+    jumpLetters();
 
     end();
 
@@ -193,6 +169,41 @@ int GameWindow::rndGen()
 
     num = dist(en);
     return num;
+}
+
+void GameWindow::jumpLetters()
+{
+    int pointSize = 0;
+    QFont font = ui->T->font();
+
+    pointSize = rndGen();
+    font.setPointSize(pointSize);
+    ui->T->setFont(font);
+
+    pointSize = rndGen();
+    font = ui->E->font();
+    font.setPointSize(pointSize);
+    ui->E->setFont(font);
+
+    pointSize = rndGen();
+    font = ui->T_2->font();
+    font.setPointSize(pointSize);
+    ui->T_2->setFont(font);
+
+    pointSize = rndGen();
+    font = ui->R->font();
+    font.setPointSize(pointSize);
+    ui->R->setFont(font);
+
+    pointSize = rndGen();
+    font = ui->I->font();
+    font.setPointSize(pointSize);
+    ui->I->setFont(font);
+
+    pointSize = rndGen();
+    font = ui->S->font();
+    font.setPointSize(pointSize);
+    ui->S->setFont(font);
 }
 
 

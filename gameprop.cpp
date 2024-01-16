@@ -97,3 +97,13 @@ const void playField::moveDown(){
         }
     }
 }
+
+const int figure::figNumber(){
+    int num;
+    std::random_device rnd;
+    std::mt19937 en(rnd());
+    std::uniform_int_distribution<int> dist(0, 19);
+
+    num = dist(en);
+    return num;
+}

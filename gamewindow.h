@@ -65,6 +65,8 @@ private slots:
 
     int rndGen();
 
+    void jumpLetters();
+
     void on_Close_clicked();
 
     void on_Start_clicked();

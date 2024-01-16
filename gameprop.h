@@ -10,7 +10,7 @@ class figure
 {
 public:
 
-    QString shapes[20]{"010010010",
+    const QString shapes[20]{"010010010",
                        "010010011",
                        "010010110",
                        "010010111",
@@ -31,15 +31,7 @@ public:
                        "001111001",
                        "100111100"};
 
-    int figNumber(){
-        int num;
-        std::random_device rnd;
-        std::mt19937 en(rnd());
-        std::uniform_int_distribution<int> dist(0, 19);
-
-        num = dist(en);
-        return num;
-    }
+    const int figNumber();
 };
 
 class playField
