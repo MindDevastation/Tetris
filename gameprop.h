@@ -5,12 +5,6 @@
 #include <QString>
 #include <random>
 
-class gameProp
-{
-public:
-    gameProp();
-};
-
 
 class figure
 {

@@ -1,13 +1,14 @@
 #include "mainwindow.h"
 #include "./ui_mainwindow.h"
 #include <QPixmap>
+#include <QMessageBox>
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-    l = new GameWindow(this);
+    this->GameWindow = new class GameWindow(this);
 
     QPixmap pix(":/img/tetris.jpg");
 
@@ -28,9 +29,20 @@ MainWindow::~MainWindow()
 void MainWindow::on_Start_clicked()
 {
     close();
-    l->exec();
-    l->setFixedHeight(1);
-    l->setFixedWidth(1);
+    GameWindow->exec();
+    GameWindow->setFixedHeight(1);
+    GameWindow->setFixedWidth(1);
 
+}
+
+
+void MainWindow::on_Close_clicked()
+{
+    QMessageBox::StandardButton reply = QMessageBox::question(this, "Exit",
+                                                              "Are you sure you want to exit?",
+                                                              QMessageBox::Yes | QMessageBox::No);
+    if(reply == QMessageBox::Yes){
+        close();
+    }
 }
 

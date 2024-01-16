@@ -15,10 +15,12 @@ class MainWindow : public QMainWindow
 public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
-    GameWindow* l;
+    GameWindow* GameWindow;
 
 private slots:
     void on_Start_clicked();
+
+    void on_Close_clicked();
 
 private:
     Ui::MainWindow *ui;

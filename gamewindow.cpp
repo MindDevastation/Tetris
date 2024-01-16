@@ -269,7 +269,7 @@ void GameWindow::keyPressEvent(QKeyEvent *e)
 
 
     }else if(e->key() == Qt::Key_Right || e->key() == Qt::Key_D){
-        if(posY < this->gameProp.getCols() - 4){
+        if(posY < this->gameProp.getCols() - 3){
             posY++;
         }
 
